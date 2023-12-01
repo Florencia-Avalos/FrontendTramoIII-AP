@@ -1,0 +1,264 @@
+
+.app-main__header{
+  background-color: #333; 
+  height: 10vh;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 12;
+  padding:0 100px;
+  
+}
+
+
+
+.app-main__header--logo{
+  font-size: 1.5em;
+  /* width: 40%; */
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.app-main__header--logo a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app-main__header--logo i{
+  font-size: 2em;
+}
+
+.user-icon{
+  width: 30px;
+}
+
+
+.app-main__header--nav ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-bottom: 0;
+  margin-left: 10em;
+}
+
+.app-main__header--nav ul li{
+  margin: 0 1.5em;
+}
+
+.app-main__header--nav ul li a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+  
+}
+
+
+
+.app-login{
+ 
+  cursor: pointer;
+}
+
+.app-login a {
+  background-color: rgb(79, 70, 229);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+  .bx-menu{
+    display: block;
+    position: relative;
+    font-size: 2em;
+    padding-right: .5em;
+  }
+
+    .app-main__header--nav .nav-items{
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 11;
+  }
+
+    .app-main__header--nav ul li{
+    margin-top: 3em;
+
+  }
+
+   .app-main__header--logo{
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+    .app-main__header--nav .none{
+    display: none;
+  }
+
+  
+  .modalBackground{
+    background-color: hsla(0deg, 0%, 0%, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 10;
+    
+  }
+  
+  .modalBackgroundNone{
+  display: none;
+}
+   .app-main__header{
+    padding: 0;
+  }
+
+    .bx-x{
+    display: block;
+    font-size: 2em;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+
+ .avatar-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.user-avatar {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  
+}
+
+
+.logout-button {
+  display: block;
+  position: absolute;
+  background-color: rgb(79, 70, 229);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  right:  -6px;
+  margin-top: 5px;
+  border-radius: 5px;
+  white-space: nowrap; 
+}
+
+
+
+.avatar-container.show-logout .logout-button {
+  display: block;
+  z-index: 1; 
+}
+
+ 
+
+@media (min-width:768px) {
+
+
+  .app-login a{
+    padding: 6px;
+  }
+
+  .app-main__header--nav .nav-items{
+
+    flex-direction: row;
+    position: sticky;
+    height: auto;
+  }
+
+  
+
+
+
+  .app-main__header{
+    justify-content: center;
+    padding: 0 10em;
+  }
+
+  
+  .app-main__header--nav{
+    display: flex;
+  }
+  
+  .app-main__header--nav ul li{
+    margin-top: 1em;
+    display: flex;
+  }
+
+  .app-main__header--nav ul li a{
+    display: flex;
+    align-items: center;
+    
+    gap: 0.5em;
+  }
+
+  .app-main__header--nav .none{
+    display: flex;
+  }
+
+  .bx-x{
+  display: none;
+}
+
+.bx-menu{
+  display: none;
+}
+
+ .app-main__header--nav ul li a::before,.app-main__header--nav ul li a::after{
+  content: '';
+  border-bottom: 2px solid rgb(91, 82, 247);
+  position: absolute;
+  opacity: 0;
+  transition: .2s;
+  
+}
+
+.app-main__header--nav ul li a::before{
+  bottom: -2px;
+  width: 90%;
+  right: 0;
+}
+
+.app-main__header--nav ul li a::after{
+  bottom: -10px;
+  width: 60%;
+  left: 0;
+}
+
+.app-main__header--nav ul li a:hover::before{
+  opacity: 1;
+  width: 70%;
+}
+
+.app-main__header--nav ul li a:hover::after{
+  opacity: 1;
+  width: 40%;
+}
+
+
+
+.modalBackground{
+  display: none;
+}
+
+}
+
