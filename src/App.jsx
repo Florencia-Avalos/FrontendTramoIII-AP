@@ -9,6 +9,8 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { signInToken } from "./redux/actions/userAction";
 import PostForm from "./components/Post/Post";
+import SignUp from "./components/pages/SignUp/SignUp";
+import Login from "./components/pages/Login/Login";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,16 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+
+      {
+        path: "/signUp",
+        element: <SignUp />,
+      },
+
+      {
+        path: "/login",
+        element: <Login />,
       },
 
       {

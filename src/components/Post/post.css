@@ -1,4 +1,4 @@
-/* Estilos para el formulario PostForm */
+
 .post-form-container {
   max-width: 400px;
   margin: 0 auto;
@@ -6,7 +6,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
-  margin-top: 5em; /* Ajusta el margen superior según tu diseño */
+  margin-top: 5em; 
 }
 
 .post-form-container h2 {

@@ -1,0 +1,22 @@
+.signUp{
+    height: 100vh;
+
+}
+
+.card-body{
+    border: 1px solid rgb(79, 70, 229);
+}
+
+.imgSignUp{
+    width:400px;
+    margin: auto;
+}
+
+.error-message-block{
+    display: block;
+    color: red;
+  }
+
+  .error-message-hidden{
+    display: none;
+  }

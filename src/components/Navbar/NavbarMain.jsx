@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logOut } from "../../redux/actions/userAction";
 
 const NavbarMain = () => {
-  const user = useSelector((store) => store.users.user);
+  const user = useSelector((store) => store.userReducer.user);
 
   const dispatch = useDispatch();
 
@@ -35,7 +35,7 @@ const NavbarMain = () => {
     <>
       <div className="app-main__header--logo">
         <Link to="/">
-        <i className='bx bx-library'></i>
+          <i className="bx bx-library"></i>
           ShinoPost
         </Link>
       </div>
@@ -50,8 +50,6 @@ const NavbarMain = () => {
               <i className={` ${menuOpen ? " bx bx-x" : "none"}`}></i>
             </div>
           </li>
-        
-        
 
           {user ? (
             <>
